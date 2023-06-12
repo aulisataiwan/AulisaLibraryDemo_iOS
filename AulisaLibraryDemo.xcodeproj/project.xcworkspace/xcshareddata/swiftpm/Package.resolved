@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "aulisalibrary",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/aulisataiwan/AulisaLibrary",
+      "state" : {
+        "revision" : "0c96a6cbb4443d4a61348c91150b39311a08b908",
+        "version" : "0.0.1"
+      }
+    }
+  ],
+  "version" : 2
+}

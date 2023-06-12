@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A173CB62A33048C00F8F052 /* AulisaLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 0A173CB52A33048C00F8F052 /* AulisaLibrary */; };
+		0A3A52EE2510B2F8005B413F /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3A52ED2510B2F8005B413F /* list.png */; };
+		0ADE0AD82508B14600B0B120 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE0AD72508B14600B0B120 /* AppDelegate.swift */; };
+		0ADE0ADA2508B14600B0B120 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE0AD92508B14600B0B120 /* SceneDelegate.swift */; };
+		0ADE0ADC2508B14600B0B120 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE0ADB2508B14600B0B120 /* ViewController.swift */; };
+		0ADE0ADF2508B14600B0B120 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0ADD2508B14600B0B120 /* Main.storyboard */; };
+		0ADE0AE12508B14E00B0B120 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0AE02508B14E00B0B120 /* Assets.xcassets */; };
+		0ADE0AE42508B14E00B0B120 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0AE22508B14E00B0B120 /* LaunchScreen.storyboard */; };
+		0ADE0AF62508B53400B0B120 /* PAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE0AEC2508B53400B0B120 /* PAView.swift */; };
+		0ADE0AF72508B53400B0B120 /* TitleBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE0AED2508B53400B0B120 /* TitleBar.swift */; };
+		0ADE0AF82508B53400B0B120 /* SensorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0AEE2508B53400B0B120 /* SensorView.xib */; };
+		0ADE0AF92508B53400B0B120 /* TitleBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0AEF2508B53400B0B120 /* TitleBar.xib */; };
+		0ADE0AFA2508B53400B0B120 /* BPMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE0AF02508B53400B0B120 /* BPMView.swift */; };
+		0ADE0AFB2508B53400B0B120 /* BPMView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0AF12508B53400B0B120 /* BPMView.xib */; };
+		0ADE0AFC2508B53400B0B120 /* PAView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0AF22508B53400B0B120 /* PAView.xib */; };
+		0ADE0AFD2508B53400B0B120 /* SensorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE0AF32508B53400B0B120 /* SensorView.swift */; };
+		0ADE0AFE2508B53400B0B120 /* SpO2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE0AF42508B53400B0B120 /* SpO2View.swift */; };
+		0ADE0AFF2508B53400B0B120 /* SpO2View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0AF52508B53400B0B120 /* SpO2View.xib */; };
+		0ADE0B052508B7DA00B0B120 /* UIImage_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE0B012508B7D900B0B120 /* UIImage_Extension.swift */; };
+		0ADE0B062508B7DA00B0B120 /* UIView_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE0B022508B7DA00B0B120 /* UIView_Extension.swift */; };
+		0ADE0B072508B7DA00B0B120 /* UIViewController_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE0B032508B7DA00B0B120 /* UIViewController_Extension.swift */; };
+		0ADE0B082508B7DA00B0B120 /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE0B042508B7DA00B0B120 /* String_Extension.swift */; };
+		0ADE0B0A2508B99800B0B120 /* UIColor_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE0B092508B99800B0B120 /* UIColor_Extension.swift */; };
+		0ADE0B102508D4DE00B0B120 /* serial_number.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0B0E2508D4DD00B0B120 /* serial_number.png */; };
+		0ADE0B112508D4DE00B0B120 /* ui_aulisa.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0B0F2508D4DE00B0B120 /* ui_aulisa.png */; };
+		0ADE0B182508D5B500B0B120 /* aulisa_sensor_status_foot_motion_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0B122508D5B400B0B120 /* aulisa_sensor_status_foot_motion_2.png */; };
+		0ADE0B192508D5B500B0B120 /* pa_bar_back_vertical.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0B132508D5B400B0B120 /* pa_bar_back_vertical.png */; };
+		0ADE0B1A2508D5B500B0B120 /* pa_bar_front_vertical.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0B142508D5B400B0B120 /* pa_bar_front_vertical.png */; };
+		0ADE0B1B2508D5B500B0B120 /* aulisa_sensor_status_foot_motion_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0B152508D5B400B0B120 /* aulisa_sensor_status_foot_motion_1.png */; };
+		0ADE0B1C2508D5B500B0B120 /* aulisa_sensor_status_foot_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0B162508D5B400B0B120 /* aulisa_sensor_status_foot_on.png */; };
+		0ADE0B1D2508D5B500B0B120 /* aulisa_sensor_status_foot_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0B172508D5B500B0B120 /* aulisa_sensor_status_foot_off.png */; };
+		0ADE0B272508D5BE00B0B120 /* aulisa_sensor_status_sensor_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0B1E2508D5BD00B0B120 /* aulisa_sensor_status_sensor_yellow.png */; };
+		0ADE0B282508D5BE00B0B120 /* aulisa_sensor_status_bluetooth_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0B1F2508D5BD00B0B120 /* aulisa_sensor_status_bluetooth_blue.png */; };
+		0ADE0B292508D5BE00B0B120 /* aulisa_sensor_status_bluetooth_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0B202508D5BD00B0B120 /* aulisa_sensor_status_bluetooth_white.png */; };
+		0ADE0B2A2508D5BE00B0B120 /* aulisa_sensor_status_foot_none.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0B212508D5BE00B0B120 /* aulisa_sensor_status_foot_none.png */; };
+		0ADE0B2B2508D5BE00B0B120 /* aulisa_sensor_status_sensor_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0B222508D5BE00B0B120 /* aulisa_sensor_status_sensor_white.png */; };
+		0ADE0B2C2508D5BE00B0B120 /* aulisa_sensor_status_finger_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0B232508D5BE00B0B120 /* aulisa_sensor_status_finger_white.png */; };
+		0ADE0B2D2508D5BE00B0B120 /* aulisa_sensor_status_finger_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0B242508D5BE00B0B120 /* aulisa_sensor_status_finger_yellow.png */; };
+		0ADE0B2E2508D5BE00B0B120 /* aulisa_sensor_status_foot_motion_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0B252508D5BE00B0B120 /* aulisa_sensor_status_foot_motion_3.png */; };
+		0ADE0B2F2508D5BE00B0B120 /* aulisa_sensor_status_bluetooth_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0B262508D5BE00B0B120 /* aulisa_sensor_status_bluetooth_yellow.png */; };
+		0ADE0B332508D5DE00B0B120 /* aulisa_battery_medium_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0B302508D5DE00B0B120 /* aulisa_battery_medium_white.png */; };
+		0ADE0B342508D5DE00B0B120 /* aulisa_battery_low_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0B312508D5DE00B0B120 /* aulisa_battery_low_yellow.png */; };
+		0ADE0B352508D5DE00B0B120 /* aulisa_battery_full.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0B322508D5DE00B0B120 /* aulisa_battery_full.png */; };
+		0ADE0B372508D5E600B0B120 /* aulisa_battery_critical_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0B362508D5E600B0B120 /* aulisa_battery_critical_yellow.png */; };
+		0ADE0B392508D81800B0B120 /* alarm_off_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE0B382508D81800B0B120 /* alarm_off_icon.png */; };
+		0ADE0B3B2509D70500B0B120 /* AUBleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE0B3A2509D70500B0B120 /* AUBleManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0AF83D1D251C74EA00C7FD3C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A3A52ED2510B2F8005B413F /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
+		0ADE0AD42508B14600B0B120 /* AulisaLibraryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AulisaLibraryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ADE0AD72508B14600B0B120 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0ADE0AD92508B14600B0B120 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0ADE0ADB2508B14600B0B120 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0ADE0ADE2508B14600B0B120 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0ADE0AE02508B14E00B0B120 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0ADE0AE32508B14E00B0B120 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0ADE0AE52508B14E00B0B120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ADE0AEC2508B53400B0B120 /* PAView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAView.swift; sourceTree = "<group>"; };
+		0ADE0AED2508B53400B0B120 /* TitleBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleBar.swift; sourceTree = "<group>"; };
+		0ADE0AEE2508B53400B0B120 /* SensorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SensorView.xib; sourceTree = "<group>"; };
+		0ADE0AEF2508B53400B0B120 /* TitleBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleBar.xib; sourceTree = "<group>"; };
+		0ADE0AF02508B53400B0B120 /* BPMView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BPMView.swift; sourceTree = "<group>"; };
+		0ADE0AF12508B53400B0B120 /* BPMView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BPMView.xib; sourceTree = "<group>"; };
+		0ADE0AF22508B53400B0B120 /* PAView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PAView.xib; sourceTree = "<group>"; };
+		0ADE0AF32508B53400B0B120 /* SensorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorView.swift; sourceTree = "<group>"; };
+		0ADE0AF42508B53400B0B120 /* SpO2View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpO2View.swift; sourceTree = "<group>"; };
+		0ADE0AF52508B53400B0B120 /* SpO2View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpO2View.xib; sourceTree = "<group>"; };
+		0ADE0B012508B7D900B0B120 /* UIImage_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage_Extension.swift; sourceTree = "<group>"; };
+		0ADE0B022508B7DA00B0B120 /* UIView_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Extension.swift; sourceTree = "<group>"; };
+		0ADE0B032508B7DA00B0B120 /* UIViewController_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController_Extension.swift; sourceTree = "<group>"; };
+		0ADE0B042508B7DA00B0B120 /* String_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String_Extension.swift; sourceTree = "<group>"; };
+		0ADE0B092508B99800B0B120 /* UIColor_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor_Extension.swift; sourceTree = "<group>"; };
+		0ADE0B0E2508D4DD00B0B120 /* serial_number.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = serial_number.png; sourceTree = "<group>"; };
+		0ADE0B0F2508D4DE00B0B120 /* ui_aulisa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_aulisa.png; sourceTree = "<group>"; };
+		0ADE0B122508D5B400B0B120 /* aulisa_sensor_status_foot_motion_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aulisa_sensor_status_foot_motion_2.png; sourceTree = "<group>"; };
+		0ADE0B132508D5B400B0B120 /* pa_bar_back_vertical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pa_bar_back_vertical.png; sourceTree = "<group>"; };
+		0ADE0B142508D5B400B0B120 /* pa_bar_front_vertical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pa_bar_front_vertical.png; sourceTree = "<group>"; };
+		0ADE0B152508D5B400B0B120 /* aulisa_sensor_status_foot_motion_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aulisa_sensor_status_foot_motion_1.png; sourceTree = "<group>"; };
+		0ADE0B162508D5B400B0B120 /* aulisa_sensor_status_foot_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aulisa_sensor_status_foot_on.png; sourceTree = "<group>"; };
+		0ADE0B172508D5B500B0B120 /* aulisa_sensor_status_foot_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aulisa_sensor_status_foot_off.png; sourceTree = "<group>"; };
+		0ADE0B1E2508D5BD00B0B120 /* aulisa_sensor_status_sensor_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aulisa_sensor_status_sensor_yellow.png; sourceTree = "<group>"; };
+		0ADE0B1F2508D5BD00B0B120 /* aulisa_sensor_status_bluetooth_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aulisa_sensor_status_bluetooth_blue.png; sourceTree = "<group>"; };
+		0ADE0B202508D5BD00B0B120 /* aulisa_sensor_status_bluetooth_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aulisa_sensor_status_bluetooth_white.png; sourceTree = "<group>"; };
+		0ADE0B212508D5BE00B0B120 /* aulisa_sensor_status_foot_none.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aulisa_sensor_status_foot_none.png; sourceTree = "<group>"; };
+		0ADE0B222508D5BE00B0B120 /* aulisa_sensor_status_sensor_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aulisa_sensor_status_sensor_white.png; sourceTree = "<group>"; };
+		0ADE0B232508D5BE00B0B120 /* aulisa_sensor_status_finger_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aulisa_sensor_status_finger_white.png; sourceTree = "<group>"; };
+		0ADE0B242508D5BE00B0B120 /* aulisa_sensor_status_finger_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aulisa_sensor_status_finger_yellow.png; sourceTree = "<group>"; };
+		0ADE0B252508D5BE00B0B120 /* aulisa_sensor_status_foot_motion_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aulisa_sensor_status_foot_motion_3.png; sourceTree = "<group>"; };
+		0ADE0B262508D5BE00B0B120 /* aulisa_sensor_status_bluetooth_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aulisa_sensor_status_bluetooth_yellow.png; sourceTree = "<group>"; };
+		0ADE0B302508D5DE00B0B120 /* aulisa_battery_medium_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aulisa_battery_medium_white.png; sourceTree = "<group>"; };
+		0ADE0B312508D5DE00B0B120 /* aulisa_battery_low_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aulisa_battery_low_yellow.png; sourceTree = "<group>"; };
+		0ADE0B322508D5DE00B0B120 /* aulisa_battery_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aulisa_battery_full.png; sourceTree = "<group>"; };
+		0ADE0B362508D5E600B0B120 /* aulisa_battery_critical_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aulisa_battery_critical_yellow.png; sourceTree = "<group>"; };
+		0ADE0B382508D81800B0B120 /* alarm_off_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alarm_off_icon.png; sourceTree = "<group>"; };
+		0ADE0B3A2509D70500B0B120 /* AUBleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AUBleManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0ADE0AD12508B14600B0B120 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A173CB62A33048C00F8F052 /* AulisaLibrary in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0ADE0ACB2508B14600B0B120 = {
+			isa = PBXGroup;
+			children = (
+				0ADE0AD62508B14600B0B120 /* AulisaLibraryDemo */,
+				0ADE0AD52508B14600B0B120 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0ADE0AD52508B14600B0B120 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0ADE0AD42508B14600B0B120 /* AulisaLibraryDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0ADE0AD62508B14600B0B120 /* AulisaLibraryDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0ADE0B0D2508D4A200B0B120 /* Image */,
+				0ADE0B002508B76000B0B120 /* Extensions */,
+				0ADE0AEB2508B4EE00B0B120 /* View */,
+				0ADE0AD72508B14600B0B120 /* AppDelegate.swift */,
+				0ADE0AD92508B14600B0B120 /* SceneDelegate.swift */,
+				0ADE0ADB2508B14600B0B120 /* ViewController.swift */,
+				0ADE0ADD2508B14600B0B120 /* Main.storyboard */,
+				0ADE0AE02508B14E00B0B120 /* Assets.xcassets */,
+				0ADE0AE22508B14E00B0B120 /* LaunchScreen.storyboard */,
+				0ADE0AE52508B14E00B0B120 /* Info.plist */,
+				0ADE0B3A2509D70500B0B120 /* AUBleManager.swift */,
+			);
+			path = AulisaLibraryDemo;
+			sourceTree = "<group>";
+		};
+		0ADE0AEB2508B4EE00B0B120 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0ADE0AF02508B53400B0B120 /* BPMView.swift */,
+				0ADE0AF12508B53400B0B120 /* BPMView.xib */,
+				0ADE0AEC2508B53400B0B120 /* PAView.swift */,
+				0ADE0AF22508B53400B0B120 /* PAView.xib */,
+				0ADE0AF32508B53400B0B120 /* SensorView.swift */,
+				0ADE0AEE2508B53400B0B120 /* SensorView.xib */,
+				0ADE0AF42508B53400B0B120 /* SpO2View.swift */,
+				0ADE0AF52508B53400B0B120 /* SpO2View.xib */,
+				0ADE0AED2508B53400B0B120 /* TitleBar.swift */,
+				0ADE0AEF2508B53400B0B120 /* TitleBar.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0ADE0B002508B76000B0B120 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0ADE0B092508B99800B0B120 /* UIColor_Extension.swift */,
+				0ADE0B042508B7DA00B0B120 /* String_Extension.swift */,
+				0ADE0B012508B7D900B0B120 /* UIImage_Extension.swift */,
+				0ADE0B022508B7DA00B0B120 /* UIView_Extension.swift */,
+				0ADE0B032508B7DA00B0B120 /* UIViewController_Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0ADE0B0D2508D4A200B0B120 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				0A3A52ED2510B2F8005B413F /* list.png */,
+				0ADE0B382508D81800B0B120 /* alarm_off_icon.png */,
+				0ADE0B362508D5E600B0B120 /* aulisa_battery_critical_yellow.png */,
+				0ADE0B322508D5DE00B0B120 /* aulisa_battery_full.png */,
+				0ADE0B312508D5DE00B0B120 /* aulisa_battery_low_yellow.png */,
+				0ADE0B302508D5DE00B0B120 /* aulisa_battery_medium_white.png */,
+				0ADE0B1F2508D5BD00B0B120 /* aulisa_sensor_status_bluetooth_blue.png */,
+				0ADE0B202508D5BD00B0B120 /* aulisa_sensor_status_bluetooth_white.png */,
+				0ADE0B262508D5BE00B0B120 /* aulisa_sensor_status_bluetooth_yellow.png */,
+				0ADE0B232508D5BE00B0B120 /* aulisa_sensor_status_finger_white.png */,
+				0ADE0B242508D5BE00B0B120 /* aulisa_sensor_status_finger_yellow.png */,
+				0ADE0B252508D5BE00B0B120 /* aulisa_sensor_status_foot_motion_3.png */,
+				0ADE0B212508D5BE00B0B120 /* aulisa_sensor_status_foot_none.png */,
+				0ADE0B222508D5BE00B0B120 /* aulisa_sensor_status_sensor_white.png */,
+				0ADE0B1E2508D5BD00B0B120 /* aulisa_sensor_status_sensor_yellow.png */,
+				0ADE0B152508D5B400B0B120 /* aulisa_sensor_status_foot_motion_1.png */,
+				0ADE0B122508D5B400B0B120 /* aulisa_sensor_status_foot_motion_2.png */,
+				0ADE0B172508D5B500B0B120 /* aulisa_sensor_status_foot_off.png */,
+				0ADE0B162508D5B400B0B120 /* aulisa_sensor_status_foot_on.png */,
+				0ADE0B132508D5B400B0B120 /* pa_bar_back_vertical.png */,
+				0ADE0B142508D5B400B0B120 /* pa_bar_front_vertical.png */,
+				0ADE0B0E2508D4DD00B0B120 /* serial_number.png */,
+				0ADE0B0F2508D4DE00B0B120 /* ui_aulisa.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0ADE0AD32508B14600B0B120 /* AulisaLibraryDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ADE0AE82508B14E00B0B120 /* Build configuration list for PBXNativeTarget "AulisaLibraryDemo" */;
+			buildPhases = (
+				0ADE0AD02508B14600B0B120 /* Sources */,
+				0ADE0AD12508B14600B0B120 /* Frameworks */,
+				0ADE0AD22508B14600B0B120 /* Resources */,
+				0AF83D1D251C74EA00C7FD3C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AulisaLibraryDemo;
+			packageProductDependencies = (
+				0A173CB52A33048C00F8F052 /* AulisaLibrary */,
+			);
+			productName = AUOximeterDemo;
+			productReference = 0ADE0AD42508B14600B0B120 /* AulisaLibraryDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0ADE0ACC2508B14600B0B120 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1230;
+				ORGANIZATIONNAME = Aulisa;
+				TargetAttributes = {
+					0ADE0AD32508B14600B0B120 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 0ADE0ACF2508B14600B0B120 /* Build configuration list for PBXProject "AulisaLibraryDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0ADE0ACB2508B14600B0B120;
+			packageReferences = (
+				0A173CB42A33048C00F8F052 /* XCRemoteSwiftPackageReference "AulisaLibrary" */,
+			);
+			productRefGroup = 0ADE0AD52508B14600B0B120 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0ADE0AD32508B14600B0B120 /* AulisaLibraryDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0ADE0AD22508B14600B0B120 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ADE0B372508D5E600B0B120 /* aulisa_battery_critical_yellow.png in Resources */,
+				0ADE0B1D2508D5B500B0B120 /* aulisa_sensor_status_foot_off.png in Resources */,
+				0ADE0AFC2508B53400B0B120 /* PAView.xib in Resources */,
+				0ADE0B2E2508D5BE00B0B120 /* aulisa_sensor_status_foot_motion_3.png in Resources */,
+				0ADE0B2A2508D5BE00B0B120 /* aulisa_sensor_status_foot_none.png in Resources */,
+				0ADE0AF82508B53400B0B120 /* SensorView.xib in Resources */,
+				0ADE0B352508D5DE00B0B120 /* aulisa_battery_full.png in Resources */,
+				0ADE0B182508D5B500B0B120 /* aulisa_sensor_status_foot_motion_2.png in Resources */,
+				0ADE0AE42508B14E00B0B120 /* LaunchScreen.storyboard in Resources */,
+				0ADE0AE12508B14E00B0B120 /* Assets.xcassets in Resources */,
+				0ADE0B392508D81800B0B120 /* alarm_off_icon.png in Resources */,
+				0ADE0B192508D5B500B0B120 /* pa_bar_back_vertical.png in Resources */,
+				0ADE0B1A2508D5B500B0B120 /* pa_bar_front_vertical.png in Resources */,
+				0ADE0B2C2508D5BE00B0B120 /* aulisa_sensor_status_finger_white.png in Resources */,
+				0ADE0B332508D5DE00B0B120 /* aulisa_battery_medium_white.png in Resources */,
+				0ADE0AFF2508B53400B0B120 /* SpO2View.xib in Resources */,
+				0ADE0AF92508B53400B0B120 /* TitleBar.xib in Resources */,
+				0ADE0B112508D4DE00B0B120 /* ui_aulisa.png in Resources */,
+				0ADE0AFB2508B53400B0B120 /* BPMView.xib in Resources */,
+				0ADE0B2D2508D5BE00B0B120 /* aulisa_sensor_status_finger_yellow.png in Resources */,
+				0ADE0B342508D5DE00B0B120 /* aulisa_battery_low_yellow.png in Resources */,
+				0ADE0ADF2508B14600B0B120 /* Main.storyboard in Resources */,
+				0ADE0B2B2508D5BE00B0B120 /* aulisa_sensor_status_sensor_white.png in Resources */,
+				0ADE0B1B2508D5B500B0B120 /* aulisa_sensor_status_foot_motion_1.png in Resources */,
+				0ADE0B272508D5BE00B0B120 /* aulisa_sensor_status_sensor_yellow.png in Resources */,
+				0ADE0B282508D5BE00B0B120 /* aulisa_sensor_status_bluetooth_blue.png in Resources */,
+				0ADE0B1C2508D5B500B0B120 /* aulisa_sensor_status_foot_on.png in Resources */,
+				0A3A52EE2510B2F8005B413F /* list.png in Resources */,
+				0ADE0B102508D4DE00B0B120 /* serial_number.png in Resources */,
+				0ADE0B2F2508D5BE00B0B120 /* aulisa_sensor_status_bluetooth_yellow.png in Resources */,
+				0ADE0B292508D5BE00B0B120 /* aulisa_sensor_status_bluetooth_white.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0ADE0AD02508B14600B0B120 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ADE0AFE2508B53400B0B120 /* SpO2View.swift in Sources */,
+				0ADE0ADC2508B14600B0B120 /* ViewController.swift in Sources */,
+				0ADE0AFD2508B53400B0B120 /* SensorView.swift in Sources */,
+				0ADE0AD82508B14600B0B120 /* AppDelegate.swift in Sources */,
+				0ADE0B082508B7DA00B0B120 /* String_Extension.swift in Sources */,
+				0ADE0AF72508B53400B0B120 /* TitleBar.swift in Sources */,
+				0ADE0B0A2508B99800B0B120 /* UIColor_Extension.swift in Sources */,
+				0ADE0B052508B7DA00B0B120 /* UIImage_Extension.swift in Sources */,
+				0ADE0B072508B7DA00B0B120 /* UIViewController_Extension.swift in Sources */,
+				0ADE0ADA2508B14600B0B120 /* SceneDelegate.swift in Sources */,
+				0ADE0B3B2509D70500B0B120 /* AUBleManager.swift in Sources */,
+				0ADE0AFA2508B53400B0B120 /* BPMView.swift in Sources */,
+				0ADE0B062508B7DA00B0B120 /* UIView_Extension.swift in Sources */,
+				0ADE0AF62508B53400B0B120 /* PAView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0ADE0ADD2508B14600B0B120 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0ADE0ADE2508B14600B0B120 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0ADE0AE22508B14E00B0B120 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0ADE0AE32508B14E00B0B120 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0ADE0AE62508B14E00B0B120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0ADE0AE72508B14E00B0B120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0ADE0AE92508B14E00B0B120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7V32KE26Z;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AulisaLibraryDemo",
+					"$(PROJECT_DIR)/AulisaLibraryDemo/lib",
+				);
+				INFOPLIST_FILE = AulisaLibraryDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AulisaLibraryDemo",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aulisa.demo.AulisaLibraryDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0ADE0AEA2508B14E00B0B120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7V32KE26Z;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AulisaLibraryDemo",
+					"$(PROJECT_DIR)/AulisaLibraryDemo/lib",
+				);
+				INFOPLIST_FILE = AulisaLibraryDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AulisaLibraryDemo",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aulisa.demo.AulisaLibraryDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0ADE0ACF2508B14600B0B120 /* Build configuration list for PBXProject "AulisaLibraryDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ADE0AE62508B14E00B0B120 /* Debug */,
+				0ADE0AE72508B14E00B0B120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0ADE0AE82508B14E00B0B120 /* Build configuration list for PBXNativeTarget "AulisaLibraryDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ADE0AE92508B14E00B0B120 /* Debug */,
+				0ADE0AEA2508B14E00B0B120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0A173CB42A33048C00F8F052 /* XCRemoteSwiftPackageReference "AulisaLibrary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aulisataiwan/AulisaLibrary";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A173CB52A33048C00F8F052 /* AulisaLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A173CB42A33048C00F8F052 /* XCRemoteSwiftPackageReference "AulisaLibrary" */;
+			productName = AulisaLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0ADE0ACC2508B14600B0B120 /* Project object */;
+}

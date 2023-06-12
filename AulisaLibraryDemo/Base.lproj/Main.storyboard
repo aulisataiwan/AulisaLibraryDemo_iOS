@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AulisaLibraryDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iwx-cb-0hA" customClass="TitleBar" customModule="AulisaLibraryDemo">
+                                <rect key="frame" x="0.0" y="20" width="414" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="NOR-Pd-4Qm">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="80"/>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uug-gu-alR" userLabel="Signal View">
+                                <rect key="frame" x="0.0" y="100" width="414" height="636"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qqv-Lr-xaS" userLabel="Data View">
+                                        <rect key="frame" x="5" y="0.0" width="404" height="542.66666666666663"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="us6-NB-3Tw" userLabel="SpO2 View" customClass="SpO2View" customModule="AulisaLibraryDemo">
+                                                <rect key="frame" x="0.0" y="0.0" width="404" height="197"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y7c-ag-tsr" userLabel="BPM View" customClass="BPMView" customModule="AulisaLibraryDemo">
+                                                <rect key="frame" x="0.0" y="207" width="404" height="197"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rbf-x6-YY0" userLabel="PA View" customClass="PAView" customModule="AulisaLibraryDemo">
+                                                <rect key="frame" x="0.0" y="414" width="404" height="123.66666666666663"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Rbf-x6-YY0" secondAttribute="bottom" constant="5" id="5NT-GR-Q50"/>
+                                            <constraint firstItem="Rbf-x6-YY0" firstAttribute="trailing" secondItem="y7c-ag-tsr" secondAttribute="trailing" id="6Kl-gH-PvS"/>
+                                            <constraint firstAttribute="trailing" secondItem="us6-NB-3Tw" secondAttribute="trailing" id="7VQ-nh-riy"/>
+                                            <constraint firstItem="us6-NB-3Tw" firstAttribute="leading" secondItem="Qqv-Lr-xaS" secondAttribute="leading" id="BOg-NL-A51"/>
+                                            <constraint firstItem="y7c-ag-tsr" firstAttribute="trailing" secondItem="us6-NB-3Tw" secondAttribute="trailing" id="NLm-JH-C4G"/>
+                                            <constraint firstItem="y7c-ag-tsr" firstAttribute="top" secondItem="us6-NB-3Tw" secondAttribute="bottom" constant="10" id="RBl-bG-Nbz"/>
+                                            <constraint firstItem="Rbf-x6-YY0" firstAttribute="leading" secondItem="y7c-ag-tsr" secondAttribute="leading" id="Rqa-Fm-rHD"/>
+                                            <constraint firstItem="us6-NB-3Tw" firstAttribute="top" secondItem="Qqv-Lr-xaS" secondAttribute="top" id="ndi-vM-cVs"/>
+                                            <constraint firstItem="us6-NB-3Tw" firstAttribute="height" secondItem="Qqv-Lr-xaS" secondAttribute="height" multiplier="2:5" constant="-20" id="ndz-o5-Y0N"/>
+                                            <constraint firstItem="y7c-ag-tsr" firstAttribute="height" secondItem="Qqv-Lr-xaS" secondAttribute="height" multiplier="2:5" constant="-20" id="qor-qp-LDd"/>
+                                            <constraint firstItem="y7c-ag-tsr" firstAttribute="bottom" secondItem="Rbf-x6-YY0" secondAttribute="top" constant="-10" id="rgW-JA-E6h"/>
+                                            <constraint firstItem="y7c-ag-tsr" firstAttribute="leading" secondItem="us6-NB-3Tw" secondAttribute="leading" id="uI2-Bv-aow"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfR-Go-56T" userLabel="Sensor Status" customClass="SensorView" customModule="AulisaLibraryDemo">
+                                        <rect key="frame" x="5" y="542.66666666666663" width="404" height="88.333333333333371"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="zfR-Go-56T" secondAttribute="height" multiplier="4:1" constant="50" id="MX5-5J-zWX"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="MX5-5J-zWX"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="MX5-5J-zWX"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Qqv-Lr-xaS" firstAttribute="top" secondItem="uug-gu-alR" secondAttribute="top" id="3kY-w4-twq"/>
+                                    <constraint firstItem="Qqv-Lr-xaS" firstAttribute="leading" secondItem="zfR-Go-56T" secondAttribute="leading" id="I2S-z5-pkZ"/>
+                                    <constraint firstItem="zfR-Go-56T" firstAttribute="height" secondItem="uug-gu-alR" secondAttribute="height" multiplier="1:7" id="LJ2-oC-X86"/>
+                                    <constraint firstItem="Qqv-Lr-xaS" firstAttribute="trailing" secondItem="zfR-Go-56T" secondAttribute="trailing" id="V5d-MA-mUL"/>
+                                    <constraint firstAttribute="trailing" secondItem="zfR-Go-56T" secondAttribute="trailing" constant="5" id="XdX-Xu-IDk"/>
+                                    <constraint firstItem="zfR-Go-56T" firstAttribute="top" secondItem="Qqv-Lr-xaS" secondAttribute="bottom" id="nbm-Mp-AxW"/>
+                                    <constraint firstItem="zfR-Go-56T" firstAttribute="leading" secondItem="uug-gu-alR" secondAttribute="leading" constant="5" id="pKD-aM-yjb"/>
+                                    <constraint firstAttribute="bottom" secondItem="zfR-Go-56T" secondAttribute="bottom" constant="5" id="yaN-jO-DuM"/>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="LJ2-oC-X86"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Iwx-cb-0hA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1Wq-oO-deF"/>
+                            <constraint firstItem="Iwx-cb-0hA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CRe-Qz-hsa"/>
+                            <constraint firstItem="uug-gu-alR" firstAttribute="top" secondItem="Iwx-cb-0hA" secondAttribute="bottom" id="RDD-rg-hV4"/>
+                            <constraint firstItem="Iwx-cb-0hA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WJQ-Nm-Lm3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uug-gu-alR" secondAttribute="trailing" id="juX-9K-7mc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uug-gu-alR" secondAttribute="bottom" id="rK3-2x-V14"/>
+                            <constraint firstItem="uug-gu-alR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uec-UX-aC6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bpmView" destination="y7c-ag-tsr" id="N73-ot-MN2"/>
+                        <outlet property="paView" destination="Rbf-x6-YY0" id="g0a-rS-4dB"/>
+                        <outlet property="sensorView" destination="zfR-Go-56T" id="R9U-gM-gAZ"/>
+                        <outlet property="spo2View" destination="us6-NB-3Tw" id="JVf-Bj-KZu"/>
+                        <outlet property="titleView" destination="Iwx-cb-0hA" id="kZq-CI-ZWX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="139"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SpO2View" customModule="AUOximeterDemo">
+            <connections>
+                <outlet property="SpO2AlarmLabel" destination="wFP-ig-OKQ" id="eOa-ZP-EaH"/>
+                <outlet property="SpO2Label" destination="nMa-Vc-ROy" id="Fq3-44-nF1"/>
+                <outlet property="alarmMaxLabel" destination="oGQ-tP-H9R" id="sKC-dw-JId"/>
+                <outlet property="alarmMinLabel" destination="Bf7-Zn-Rj0" id="yle-0k-qZz"/>
+                <outlet property="alarmMuteIamge" destination="DpD-f5-lPj" id="3Op-sa-YCF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="wi9-Zw-wqR">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nMa-Vc-ROy" userLabel="Spo2 Label">
+                    <rect key="frame" x="15" y="60" width="170" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="70"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wFP-ig-OKQ" userLabel="Spo2 Alarm Label">
+                    <rect key="frame" x="15" y="60" width="170" height="100"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="70"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zLo-ow-kW7">
+                    <rect key="frame" x="10" y="10" width="180" height="40"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alarm_off_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="DpD-f5-lPj">
+                            <rect key="frame" x="138" y="0.0" width="42" height="40"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="VEE-j0-BPl">
+                            <rect key="frame" x="0.0" y="0.0" width="98" height="40"/>
+                            <attributedString key="attributedText">
+                                <fragment content="SpO">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <font key="NSFont" metaFont="system" size="32"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="2 ">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <font key="NSFont" metaFont="menu" size="14"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="%">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <font key="NSFont" metaFont="system" size="31"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oGQ-tP-H9R" userLabel="Alarm Max">
+                            <rect key="frame" x="138" y="0.0" width="42" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="42" id="WqF-KQ-Ugy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="DpD-f5-lPj" firstAttribute="top" secondItem="oGQ-tP-H9R" secondAttribute="top" id="4hU-QA-HLg"/>
+                        <constraint firstItem="VEE-j0-BPl" firstAttribute="top" secondItem="zLo-ow-kW7" secondAttribute="top" id="5JI-yC-OXf"/>
+                        <constraint firstItem="VEE-j0-BPl" firstAttribute="leading" secondItem="zLo-ow-kW7" secondAttribute="leading" id="7R0-xC-hE3"/>
+                        <constraint firstItem="DpD-f5-lPj" firstAttribute="trailing" secondItem="oGQ-tP-H9R" secondAttribute="trailing" id="Fre-Ye-qb7"/>
+                        <constraint firstAttribute="bottom" secondItem="oGQ-tP-H9R" secondAttribute="bottom" id="H9z-xx-y0a"/>
+                        <constraint firstAttribute="trailing" secondItem="oGQ-tP-H9R" secondAttribute="trailing" id="NBr-UK-4sb"/>
+                        <constraint firstItem="DpD-f5-lPj" firstAttribute="bottom" secondItem="oGQ-tP-H9R" secondAttribute="bottom" id="UTi-UY-0RJ"/>
+                        <constraint firstAttribute="bottom" secondItem="VEE-j0-BPl" secondAttribute="bottom" id="WaH-LM-1yb"/>
+                        <constraint firstItem="DpD-f5-lPj" firstAttribute="leading" secondItem="oGQ-tP-H9R" secondAttribute="leading" id="sO3-il-Pgr"/>
+                        <constraint firstItem="oGQ-tP-H9R" firstAttribute="top" secondItem="zLo-ow-kW7" secondAttribute="top" id="yxT-yQ-HCu"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Bf7-Zn-Rj0" userLabel="Alarm Min">
+                    <rect key="frame" x="148" y="148" width="42" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="bH1-sE-Ned"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="zLo-ow-kW7" firstAttribute="height" secondItem="wi9-Zw-wqR" secondAttribute="height" multiplier="1:5" id="8MN-CA-Hc6"/>
+                <constraint firstItem="Bf7-Zn-Rj0" firstAttribute="trailing" secondItem="zLo-ow-kW7" secondAttribute="trailing" id="8nD-Hu-1fR"/>
+                <constraint firstItem="zLo-ow-kW7" firstAttribute="top" secondItem="wi9-Zw-wqR" secondAttribute="top" constant="10" id="FWz-5y-4Of"/>
+                <constraint firstItem="nMa-Vc-ROy" firstAttribute="width" secondItem="wi9-Zw-wqR" secondAttribute="width" constant="-30" id="Hi2-iS-J3S"/>
+                <constraint firstItem="nMa-Vc-ROy" firstAttribute="centerY" secondItem="wi9-Zw-wqR" secondAttribute="centerY" constant="10" id="Huw-Bp-RAc"/>
+                <constraint firstItem="wFP-ig-OKQ" firstAttribute="trailing" secondItem="nMa-Vc-ROy" secondAttribute="trailing" id="IZw-uC-A4p"/>
+                <constraint firstItem="wFP-ig-OKQ" firstAttribute="top" secondItem="nMa-Vc-ROy" secondAttribute="top" id="JcD-PW-Gc6"/>
+                <constraint firstItem="nMa-Vc-ROy" firstAttribute="height" secondItem="wi9-Zw-wqR" secondAttribute="height" multiplier="1:2" id="Orp-te-MPM"/>
+                <constraint firstItem="wFP-ig-OKQ" firstAttribute="leading" secondItem="nMa-Vc-ROy" secondAttribute="leading" id="TSF-Nd-RCk"/>
+                <constraint firstItem="Bf7-Zn-Rj0" firstAttribute="height" secondItem="zLo-ow-kW7" secondAttribute="height" id="Yz9-qE-URT"/>
+                <constraint firstItem="wFP-ig-OKQ" firstAttribute="bottom" secondItem="nMa-Vc-ROy" secondAttribute="bottom" id="g3D-9y-PkX"/>
+                <constraint firstAttribute="bottom" secondItem="Bf7-Zn-Rj0" secondAttribute="bottom" constant="12" id="jxn-KN-4st"/>
+                <constraint firstItem="nMa-Vc-ROy" firstAttribute="centerX" secondItem="wi9-Zw-wqR" secondAttribute="centerX" id="n32-Mm-oql"/>
+                <constraint firstAttribute="trailing" secondItem="zLo-ow-kW7" secondAttribute="trailing" constant="10" id="ozy-79-i97"/>
+                <constraint firstItem="zLo-ow-kW7" firstAttribute="leading" secondItem="wi9-Zw-wqR" secondAttribute="leading" constant="10" id="soc-rQ-IxD"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-47" y="22"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="alarm_off_icon.png" width="55.200000762939453" height="56"/>
+    </resources>
+</document>
