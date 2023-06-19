@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/li/Transcend/Documents/AUOximeterDemo_iOS/AulisaLibraryDemo.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>
